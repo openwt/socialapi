@@ -1,0 +1,20 @@
+{
+  "name": "Social API",
+  "description": "A quick and dirty Go Twitter API",
+  "repository": "https://github.com/openwt/socialapi",
+  "keywords": ["go", "twitter", "api", "test"],
+  "env": {
+	  "CONSUMER_KEY": {
+	  	"description" : "Twitter consumer key.",
+	  	"generator": "secret"
+	  },
+	  "CONSUMER_SECRET": {
+	  	"description" : "Twitter consumer secret.",
+	  	"generator": "secret"
+	  },
+	  "COOKIE_STORE_SECRET": {
+	  	"description" : "The cookie store key.",
+	  	"generator": "secret"
+	  }
+  }
+}

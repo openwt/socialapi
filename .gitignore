@@ -1,0 +1,6 @@
+gin-bin
+socialios
+
+*.swp
+.DS_Store
+*.log

@@ -1,0 +1,72 @@
+FORMAT: 1A
+HOST: https://salty-mesa-4348.herokuapp.com/
+
+# Socialios
+
+Socialios is an API giving informations about iOS tweets on Twitter
+
+# Log in [/login]
+
+Authenticate with the api
+
+## Log in [POST]
+
++ Attributes (object)
+
+    + login (string, required) - The login
+    + password (string, required) - The password
+
++ Request (application/json)
+
++ Response 200
+
+     + Headers
+               
+                Set-Cookie: "SCIOSSESSION=wefpwekfpokwe"
+                
+
+# Log out [/logout]
+
+Logout 
+
+## Log out [DELETE]
+
++ Request (application/json)
+
++ Response 200
+
+# Tweets [/tweets{?max_id}]
+
+Get the differents tweets
+
++ Parameters
+            
+   + max_id (string, optional) - Optional id for incrementing
+
+## Get all [GET]
+
++ Request
+    
+    + Headers
+            
+            Cookie:"SCIOSSESSION=wefpwekfpokwe"
+
++ Response 200 (application/json)
+
+        [
+            {
+            "id": "598021911541481472",
+            "author": "Top 10 Movies",
+            "content": "France 63. World Invasion: Battle Los Angeles - Jonathan Liebesman http://t.co/NKckQUb6B1 #Movies #iTunes #iPhone #Apple",
+            "images": null
+            },
+            {
+            "id": "598021911386279936",
+            "author": "Grace Gimeno",
+            "content": "RT @planetshakers: It's finally here! Our latest album Outback Worship Sessions is now AVAILABLE http://t.co/nqXr1Hv7Ej #planetshakers http…",
+            "images": [
+            "http://pbs.twimg.com/media/CEyZpDwVEAAFRvw.jpg"
+            ]
+            }
+        ]
+	
