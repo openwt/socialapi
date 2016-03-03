@@ -6,7 +6,7 @@ A simple API reading tweets from the Twitter API.
 
 ```
 git clone https://github.com/openwt/socialapi
-PORT=6060 ./socialapi
+PORT=6060 CONSUMER_SECRET=twitter_secret CONSUMER_KEY=twitter_key COOKIE_STORE_SECRET=cookie_secret ./socialapi
 ```
 
 Your app should now be running on [localhost:6060](http://localhost:6060/).
