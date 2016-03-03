@@ -11,14 +11,10 @@ PORT=6060 ./socialapi
 
 Your app should now be running on [localhost:6060](http://localhost:6060/).
 
+## Deploy to Scalingo
+
+[![Deploy on Scalingo](https://cdn.scalingo.com/deploy/button.svg)](https://my.scalingo.com/deploy?source=https://github.com/openwt/socialapi#master)
+
 ## Deploying to Heroku
-
-```
-heroku create
-git push heroku master
-heroku open
-```
-
-Alternatively, you can deploy your own copy of the app using the web-based flow:
 
 [![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
